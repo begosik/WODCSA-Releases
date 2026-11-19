@@ -1,0 +1,71 @@
+[
+  {
+    "tag_name": "launcher-1.0.4",
+    "body": "Папочный WoD Launcher 1.0.4. Лаунчер проверяет обновления и скачивает WoD 2.0c из публичного репозитория WODCSA-Releases. Список версий ограничен восемью строками с прокруткой. Игра стартует в полноэкранном оконном режиме. Правила лобби передаются через штатные сетевые настройки комнаты. Добавлен профиль Retail 1.12 для проверенного образа; профиль Steam сохранён. Для первого перехода с лаунчера 1.0.3 скачайте полный архив WOD-Launcher-2.0c-win64.zip.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 769202620,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31206461,
+        "digest": "sha256:95ca1a83087625592381f33bd00edd1935d7dfedd1b594c573e7fc6d5f752941",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.4/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 769202264,
+        "name": "WoDLauncher.zip",
+        "size": 3212675,
+        "digest": "sha256:b7024248f7350ec33cc02aeef7a5c8c3c84d430462262d11076986f5a6845212",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.4/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
+    "tag_name": "launcher-1.0.5",
+    "body": "- Номер версии лаунчера отображается в заголовке окна.\n- Red Alert 3 запускается со штатными настройками режима экрана.\n\nДля установки с нуля скачайте WOD-Launcher-2.0c-win64.zip и распакуйте весь архив в одну папку. WoDLauncher.zip используется для автообновления переносимой версии.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 769292585,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31205501,
+        "digest": "sha256:0b794cf280ddcd8438362cdc1d14a59cc541cddbd21c98c521c21dbd39328512",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.5/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 769292284,
+        "name": "WoDLauncher.zip",
+        "size": 3212173,
+        "digest": "sha256:0c52b0439be14c30a9fd9188db880fc715c1231ad398b1aea7e8d5caa889695c",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.5/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
+    "tag_name": "wod-2.0c",
+    "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 769127173,
+        "name": "wod-english.zip",
+        "size": 300612168,
+        "digest": "sha256:db3e6e4cb61b78886464e7b31e44b8766dbb644990ad13eb5746cbf0082db93d",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-english.zip"
+      },
+      {
+        "id": 769110022,
+        "name": "wod-russian.zip",
+        "size": 300612572,
+        "digest": "sha256:bcbc4eb60ebe5d33d3356d31faa4a264e505862b95888d158b73555723d1a04a",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-russian.zip"
+      }
+    ]
+  }
+]
