@@ -46,6 +46,29 @@
     ]
   },
   {
+    "tag_name": "launcher-1.0.6",
+    "body": "- Обновления лаунчера и список версий мода читаются из публичного каталога GitHub без токена.\n- Архивы скачиваются по публичным ссылкам и проверяются по SHA-256.\n- Если старая версия показывает сообщение о доступе GitHub, скачайте и распакуйте весь WOD-Launcher-2.0c-win64.zip. Код Test используется для тестовых версий мода.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 769346120,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31205982,
+        "digest": "sha256:10abd7f8ae4615c50d582b702e79c3a7f501b2eb675c56c135cdcae441b7ba5e",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.6/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 769345786,
+        "name": "WoDLauncher.zip",
+        "size": 3212654,
+        "digest": "sha256:3598bc9988c96da0561b0d8d3cfdd242cbe07a3a6841c658a232c9b265bcfd30",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.6/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "wod-2.0c",
     "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.",
     "draft": false,
