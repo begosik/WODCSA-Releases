@@ -1,0 +1,94 @@
+name: Refresh public release catalog
+
+on:
+  release:
+    types: [published, edited, deleted, unpublished]
+  workflow_dispatch:
+  schedule:
+    # Also reconcile asset changes and releases created with GITHUB_TOKEN.
+    - cron: '17 * * * *'
+
+concurrency:
+  group: public-release-catalog
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'begosik/WODCSA-Releases'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Refresh releases.json on main
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CATALOG_BRANCH: main
+        run: |
+          scratch=$(mktemp -d)
+          api="repos/$GITHUB_REPOSITORY"
+          gh api --paginate --slurp -H 'X-GitHub-Api-Version: 2022-11-28' \
+            "$api/releases?per_page=100" > "$scratch/pages.json"
+          current_sha=$(gh api "$api/git/trees/$CATALOG_BRANCH" \
+            --jq '.tree[] | select(.path == "releases.json" and .type == "blob") | .sha')
+
+          python3 - "$scratch" "$current_sha" <<'PY'
+          import base64
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import sys
+
+          scratch = Path(sys.argv[1])
+          current_sha = sys.argv[2]
+          pages = json.loads((scratch / "pages.json").read_text(encoding="utf-8"))
+          if not pages or not all(isinstance(page, list) for page in pages):
+              raise ValueError("Expected paginated GitHub release arrays")
+
+          download_prefix = f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/releases/download/".casefold()
+          asset_fields = ("id", "name", "size", "digest", "state", "browser_download_url")
+          catalog = []
+          for page in pages:
+              for release in page:
+                  tag = release["tag_name"]
+                  prefix, _, version = tag.partition("-")
+                  if release["draft"] or prefix.casefold() not in {"launcher", "mod", "wod"} or not version:
+                      continue
+                  assets = [
+                      {key: asset.get(key) for key in asset_fields}
+                      for asset in release["assets"]
+                      if asset["state"] == "uploaded"
+                      and asset["browser_download_url"].casefold().startswith(download_prefix)
+                  ]
+                  if assets:
+                      catalog.append({
+                          "tag_name": tag,
+                          "body": release["body"],
+                          "draft": False,
+                          "assets": sorted(assets, key=lambda asset: asset["name"]),
+                      })
+
+          catalog.sort(key=lambda release: release["tag_name"])
+          content = (json.dumps(catalog, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+          blob = f"blob {len(content)}\0".encode("ascii") + content
+          if hashlib.sha1(blob, usedforsecurity=False).hexdigest() == current_sha:
+              sys.exit(0)
+
+          request = {
+              "message": "Refresh public release catalog",
+              "branch": os.environ["CATALOG_BRANCH"],
+              "content": base64.b64encode(content).decode("ascii"),
+          }
+          if current_sha:
+              request["sha"] = current_sha
+          (scratch / "request.json").write_text(json.dumps(request), encoding="utf-8")
+          PY
+
+          if [[ -f "$scratch/request.json" ]]; then
+            gh api --method PUT "$api/contents/releases.json" \
+              --input "$scratch/request.json" --jq '.commit.sha'
+          else
+            echo 'Release catalog is up to date.'
+          fi
