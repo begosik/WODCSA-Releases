@@ -46,6 +46,29 @@
     ]
   },
   {
+    "tag_name": "launcher-1.0.12",
+    "body": "Обновлён игровой модуль для WoD 2.0f. В сетевой игре он согласует автовыбор при старте и передаёт только признак настроенного автовыбора для значков игроков.\n\nСначала обновите лаунчер, затем выберите WoD 2.0f в обычном канале. Для новой установки используйте WOD-Launcher-2.0c-win64.zip. WoDLauncher.zip применяется автоматически.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 773460226,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31250369,
+        "digest": "sha256:6eb22e1ea1eed85e3c53d307f52956f94485df33370f84eacdcb5d215c20dced",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.12/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 773459590,
+        "name": "WoDLauncher.zip",
+        "size": 3241402,
+        "digest": "sha256:a6922b5823c4335f1bb1b80e1a0f292502a918dfba7e12282f2cc3aa7a547abb",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.12/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "launcher-1.0.4",
     "body": "Папочный WoD Launcher 1.0.4. Лаунчер проверяет обновления и скачивает WoD 2.0c из публичного репозитория WODCSA-Releases. Список версий ограничен восемью строками с прокруткой. Игра стартует в полноэкранном оконном режиме. Правила лобби передаются через штатные сетевые настройки комнаты. Добавлен профиль Retail 1.12 для проверенного образа; профиль Steam сохранён. Для первого перехода с лаунчера 1.0.3 скачайте полный архив WOD-Launcher-2.0c-win64.zip.",
     "draft": false,
