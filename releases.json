@@ -167,5 +167,20 @@
         "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-russian.zip"
       }
     ]
+  },
+  {
+    "tag_name": "wod-2.0d",
+    "body": "Единая сборка Modern SDK 1.0.7. Английский языковой BIG содержит таблицу Mod.str, русский содержит gamestrings.csf. В русской таблице восстановлены используемые подписи наёмников, справочника и спецспособности.\n\nМод требует лаунчер 1.0.9. Язык переключается в меню лаунчера. Пакет устанавливается внутри WODCSA.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 772914449,
+        "name": "wod-multilingual.zip",
+        "size": 295717675,
+        "digest": "sha256:f428ac4fdebaa45201843dd440fe47d14c619f1329a9f92d94cafcce7fea21e8",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0d/wod-multilingual.zip"
+      }
+    ]
   }
 ]
