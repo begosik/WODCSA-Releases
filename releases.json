@@ -1,5 +1,28 @@
 [
   {
+    "tag_name": "launcher-1.0.10",
+    "body": "- Лаунчер автоматически продолжает загрузку с места обрыва при тайм-ауте и других временных сбоях соединения с GitHub.\n- Сообщения об ошибках скачивания и установки теперь отображаются на выбранном языке.\n- Проверено на публичном архиве WoD 2.0d с имитацией тайм-аута и проверкой SHA-256.\n\nДля чистой установки распакуйте WOD-Launcher-2.0c-win64.zip и запустите WOD Launcher.exe. WoDLauncher.zip предназначен для автообновления.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 772967589,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31225148,
+        "digest": "sha256:2381e2ded180ae1bbfab26acd394c7c41bfff6d625cbb3a3779d008c9f540345",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.10/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 772967125,
+        "name": "WoDLauncher.zip",
+        "size": 3229085,
+        "digest": "sha256:6d1b41907e2a71f09cdf9f7f449d04b5cfd83513fb1102b08f6751187ee92982",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.10/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "launcher-1.0.4",
     "body": "Папочный WoD Launcher 1.0.4. Лаунчер проверяет обновления и скачивает WoD 2.0c из публичного репозитория WODCSA-Releases. Список версий ограничен восемью строками с прокруткой. Игра стартует в полноэкранном оконном режиме. Правила лобби передаются через штатные сетевые настройки комнаты. Добавлен профиль Retail 1.12 для проверенного образа; профиль Steam сохранён. Для первого перехода с лаунчера 1.0.3 скачайте полный архив WOD-Launcher-2.0c-win64.zip.",
     "draft": false,
