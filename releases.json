@@ -115,6 +115,29 @@
     ]
   },
   {
+    "tag_name": "launcher-1.0.9",
+    "body": "Поддержка публичного WoD 2.0d. Лаунчер выбирает нативный запуск по данным пакета. Стартер принимает корректный SkuDef независимо от его имени.\n\nДля новой установки распакуйте весь WOD-Launcher-2.0c-win64.zip. Переносимый лаунчер 1.0.8 предложит обновление через GitHub.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 772921911,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31222842,
+        "digest": "sha256:b11ea5d6763b16ebd9b4a5f89f6c4201a3182444347f2e6f313165993faf77f9",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.9/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 772921431,
+        "name": "WoDLauncher.zip",
+        "size": 3226779,
+        "digest": "sha256:2d4d1f6b6828229f7ec64aea2a0d2e6b9c51bc5818f57b0b73cb1e15ac6d11b0",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.9/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "wod-2.0c",
     "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.\n\nЕдиный архив `wod-multilingual.zip` собран в Modern SDK 1.0.7 для лаунчера 1.0.8 и новее. Русский и английский языковые BIG входят в один пакет.",
     "draft": false,
