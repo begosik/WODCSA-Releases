@@ -116,7 +116,7 @@
   },
   {
     "tag_name": "wod-2.0c",
-    "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.",
+    "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.\n\nЕдиный архив `wod-multilingual.zip` собран в Modern SDK 1.0.7 для лаунчера 1.0.8 и новее. Русский и английский языковые BIG входят в один пакет.",
     "draft": false,
     "assets": [
       {
@@ -126,6 +126,14 @@
         "digest": "sha256:db3e6e4cb61b78886464e7b31e44b8766dbb644990ad13eb5746cbf0082db93d",
         "state": "uploaded",
         "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-english.zip"
+      },
+      {
+        "id": 772829900,
+        "name": "wod-multilingual.zip",
+        "size": 295755720,
+        "digest": "sha256:4523e68c094fa07f9fdae010483137b3a5c3caa5d23d19bdc8a4194687f6396b",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0c/wod-multilingual.zip"
       },
       {
         "id": 769110022,
