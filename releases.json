@@ -243,5 +243,20 @@
         "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0e/wod-multilingual.zip"
       }
     ]
+  },
+  {
+    "tag_name": "wod-2.0f",
+    "body": "В интернет-лобби RA3BattleNet значок настроенного автовыбора теперь виден всем игрокам. Галочки остаются на устройстве игрока.\n\nХост передаёт согласованные результаты и ждёт подтверждения до запуска матча. Это устраняет путь, при котором результат гостя терялся при переходе из лобби в игру.\n\nАрхив включает русский и английский языки. Для сетевой игры всем нужен WoD Launcher 1.0.12 и WoD 2.0f. Исправления проверены автоматическими тестами. Живой матч между двумя клиентами ещё не проверен.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 773430806,
+        "name": "wod-multilingual.zip",
+        "size": 295746197,
+        "digest": "sha256:9e4aa2f02d18a546e2e4be375e9259e2f2e7a7350c82923d45c7276192bf0e26",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0f/wod-multilingual.zip"
+      }
+    ]
   }
 ]
