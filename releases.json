@@ -92,6 +92,29 @@
     ]
   },
   {
+    "tag_name": "launcher-1.0.8",
+    "body": "WoD 2.0c скачивается одним архивом с русским и английским языковыми BIG. После установки язык переключается в меню лаунчера. Для обновлений под тем же номером лаунчер сверяет SHA-256 архива.\n\nПакет устанавливается внутри WODCSA. Для новой установки распакуйте весь WOD-Launcher-2.0c-win64.zip.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 772833923,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31218715,
+        "digest": "sha256:a451ea525918c13c700dc3ccccb9d13a5a3271dd21bd9355af3f7dca2363db10",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.8/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 772833661,
+        "name": "WoDLauncher.zip",
+        "size": 3224300,
+        "digest": "sha256:0731e01fd4144c558481f39eabffa021800c9c3614c8d08a5b9e1880e558dced",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.8/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "wod-2.0c",
     "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.",
     "draft": false,
