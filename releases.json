@@ -69,6 +69,29 @@
     ]
   },
   {
+    "tag_name": "launcher-1.0.7",
+    "body": "Лаунчер поддерживает WoD 2.0c.1 и содержит обновлённую DLL для штатного выбора случайных фракций в «Схватке».\n\nПереносимая версия 1.0.6 предложит автообновление. Для новой установки распакуйте весь WOD-Launcher-2.0c-win64.zip. В публичном канале выберите 2.0c.1 или «Последняя доступная».",
+    "draft": false,
+    "assets": [
+      {
+        "id": 772171088,
+        "name": "WOD-Launcher-2.0c-win64.zip",
+        "size": 31208317,
+        "digest": "sha256:d4924052ac99a82a35dc20e1455693d4f1afd6443179fed5a87a31c5d75c6138",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.7/WOD-Launcher-2.0c-win64.zip"
+      },
+      {
+        "id": 772170734,
+        "name": "WoDLauncher.zip",
+        "size": 3213902,
+        "digest": "sha256:6fb43e9a856f92b165e6e0252a63f149d8f63e6518aca8b97bcf1faea15682cd",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/launcher-1.0.7/WoDLauncher.zip"
+      }
+    ]
+  },
+  {
     "tag_name": "wod-2.0c",
     "body": "WoD 2.0c для Red Alert 3 1.12. Архивы содержат актуальные экраны лобби Steam и BattleNet с исправленными галочками США и наёмников. Для установки используйте публичный канал лаунчера и выберите язык игры.",
     "draft": false,
