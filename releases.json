@@ -228,5 +228,20 @@
         "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0d/wod-multilingual.zip"
       }
     ]
+  },
+  {
+    "tag_name": "wod-2.0e",
+    "body": "В меню «Дополнительно» появились «Экстра», «Фракции» и «Автовыбор». Личные настройки автовыбора применяются при выборе случайной стороны. США и наёмники доступны, когда их разрешает хост. При сужении списка в своей строке игрок видит новый значок.\n\nОдин архив включает русский и английский языки. Для работы новых правил нужен WoD Launcher 1.0.11. В матче «Сражение» проверены личный список и штатная жеребьёвка. Сетевой обмен проверен автоматически, живой матч между двумя клиентами ещё не проверен.",
+    "draft": false,
+    "assets": [
+      {
+        "id": 773340757,
+        "name": "wod-multilingual.zip",
+        "size": 295745925,
+        "digest": "sha256:53b5ac0e8a2385a0b1382bf549dc3e57922af9838b04393921835ac838855682",
+        "state": "uploaded",
+        "browser_download_url": "https://github.com/begosik/WODCSA-Releases/releases/download/wod-2.0e/wod-multilingual.zip"
+      }
+    ]
   }
 ]
